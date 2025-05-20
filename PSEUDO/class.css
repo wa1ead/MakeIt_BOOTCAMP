@@ -1,0 +1,35 @@
+a:link {
+  color: white;
+  background-color: red;
+}
+
+a:visited {
+  color: gray;
+  background-color: blue;
+}
+
+a:hover {
+  color: rgb(0, 255, 4);
+}
+
+a:active {
+  color: rgb(0, 0, 255);
+}
+
+li:first-child {
+  background-color: blue;
+}
+
+li:last-child {
+  background-color: green;
+}
+
+li:nth-child(4) {
+  background-color: yellow;
+}
+
+/* p:nth-child(4) {
+  background-color: blue;
+  color: white;
+  font-size: 20rem;
+} */

@@ -1,0 +1,9 @@
+div {
+  background-color: rgb(0, 0, 0);
+  background-image: url("https://www.visitmorocco.com/sites/default/files/styles/thumbnail_events_slider/public/thumbnails/image/city-panorama.-casablanca-morocco.-africa-marianna-ianovska.jpg?itok=h4FjZSIp");
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0.5;
+}

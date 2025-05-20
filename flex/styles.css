@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: solid 5px black;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.box4 {
+  flex-grow: 2;
+}

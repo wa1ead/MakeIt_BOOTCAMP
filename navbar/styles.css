@@ -1,0 +1,23 @@
+header{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+ul{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;   
+}

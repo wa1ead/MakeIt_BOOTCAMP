@@ -1,0 +1,54 @@
+/* p::first-letter {
+  font-size: 3em;
+  color: red;
+}
+
+p::first-line {
+  background-color: black;
+  color: white;
+}
+
+h1::selection {
+  background-color: green;
+  color: white;
+}
+
+li:first-child::before {
+  content: "✅";
+}
+
+li:last-child::after {
+  content: "❌";
+}
+
+li::marker {
+  content: "!";
+  color: red;
+} */
+
+p::first-line {
+  background-color: blue;
+}
+
+p::first-letter {
+  font-size: 3em;
+  color: gray;
+}
+
+p::selection {
+  background-color: black;
+  color: white;
+  font-size: 2em;
+}
+
+li::before {
+  content: "🎲";
+}
+
+li::after {
+  content: "💻";
+}
+
+li::marker {
+  content: "❗";
+}

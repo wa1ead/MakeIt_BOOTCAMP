@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      form {
+        text-align: left;
+        border: 1px solid black;
+        padding: 20px;
+      }
+      button {
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>PLEASE INPUT YOUR INFORMATIONS AND SUBMIT THE FORM</h1>
+      <p>
+        By clicking the SUBMIT button you accepted to share your data with us!
+      </p>
+      <div>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" /><br /><br />
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" /><br /><br />
+          <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="Female">Female</label>
+          </fieldset>
+          <br />
+
+          <fieldset>
+            <legend>Availability:</legend>
+            <input
+              type="checkbox"
+              id="morning"
+              name="morning"
+              vlaue="Morning"
+            />
+            <label for="morning">Morning</label>
+            <input
+              type="checkbox"
+              id="afternoon"
+              name="afternoon"
+              value="Afternoon"
+            />
+            <label for="afternoon">Afternoon</label>
+            <input type="checkbox" id="night" name="night" value="Night" />
+            <label for="night">Night</label>
+          </fieldset>
+          <br />
+          <label for="formation">Formation:</label>
+          <select name="formation" id="formation">
+            <option value="" selected hidden disabled>Choose one</option>
+            <option value="fullstack">Full Stack</option>
+            <option value="design">Design</option>
+            <option value="marketing">Marketing</option>
+          </select>
+          <br /><br /><br />
+          <button type="submit"><b>SUBMIT</b></button>
+          <button type="reset"><em>Reset</em></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 3000px;
+}
+
+header {
+  height: 100px;
+  width: 80%;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
