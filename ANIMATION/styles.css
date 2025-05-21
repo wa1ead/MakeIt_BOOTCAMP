@@ -1,0 +1,31 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myDiv;
+  animation-duration: 4s;
+}
+
+@keyframes myDiv {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 250px;
+    top: 0px;
+  }
+  50% {
+    left: 250px;
+    top: 250px;
+  }
+  75% {
+    left: 0px;
+    top: 250px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
