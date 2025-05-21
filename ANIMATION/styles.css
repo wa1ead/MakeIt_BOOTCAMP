@@ -15,17 +15,21 @@ div {
   25% {
     left: 250px;
     top: 0px;
+    background-color: blue;
   }
   50% {
     left: 250px;
     top: 250px;
+    background-color: yellow;
   }
   75% {
     left: 0px;
     top: 250px;
+    background-color: green;
   }
   100% {
     left: 0;
     top: 0;
+    background-color: white;
   }
 }
