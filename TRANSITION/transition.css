@@ -1,13 +1,17 @@
-.box {
+button {
+  background-color: gray;
   width: 100px;
-  height: 100px;
-  background-color: green;
-  transition-property: background-color;
-  transition-duration: 2s;
+  height: 50px;
+  border: 1px solid black;
+  /* transition-property: background-color, width, height;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 4s; */
+  transition: background-color 5s ease 1s, width 5s ease 1s, height 5s ease 1s;
 }
 
-.box:hover {
+button:hover {
+  background-color: green;
   width: 200px;
-  height: 200px;
-  background-color: red;
+  height: 100px;
 }
