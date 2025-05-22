@@ -1,4 +1,4 @@
-div {
+/* div {
   width: 100px;
   height: 100px;
   background-color: red;
@@ -31,5 +31,43 @@ div {
     left: 0;
     top: 0;
     background-color: white;
+  }
+} */
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myDiv;
+  animation-duration: 4s;
+  animation-play-state: running;
+}
+
+@keyframes myDiv {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    top: 0;
+    left: 250px;
+    background-color: blue;
+  }
+  50% {
+    top: 250px;
+    left: 250px;
+    background-color: yellow;
+  }
+
+  75% {
+    top: 250px;
+    left: 0;
+    background-color: #009036;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: transparent;
   }
 }
