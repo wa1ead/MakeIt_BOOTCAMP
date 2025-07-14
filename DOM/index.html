@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <button id="sub">-</button>
+      <p id="count">0</p>
+      <button id="add">+</button>
+
+      <button id="reset">reset</button>
+    </div>
+
+    <!--JS CODE -->
+    <script>
+      let add = document.getElementById("add");
+      let sub = document.getElementById("sub");
+      let count = document.getElementById("count");
+      let reset = document.getElementById("reset");
+
+      sub.addEventListener("click", function () {
+        let currentCount = parseInt(count.textContent);
+        count.textContent = currentCount - 1;
+      });
+
+      add.addEventListener("click", function () {
+        let currentCount = parseInt(count.textContent);
+        count.textContent = currentCount + 1;
+      });
+
+      reset.addEventListener("click", function () {
+        count.textContent = 0;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shopping Cart with DOM</title>
+    <style>
+      .product {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+      }
+      #cart {
+        border: 2px solid green;
+        padding: 10px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Products</h1>
+    <div id="products">
+      <div class="product">
+        <h3>Apple</h3>
+        <p>Price: $1.5</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product">
+        <h3>Banana</h3>
+        <p>Price: $0.8</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <h2>Your Cart</h2>
+    <div id="cart">
+      <div id="cart-items"></div>
+      <p>Total: $<span id="total">0.00</span></p>
+    </div>
+
+    <script>
+      let buttons = document.querySelectorAll(".add-to-cart");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          let productDiv = this.parentElement;
+          console.log(productDiv);
+          let name = productDiv.querySelector("h3").textContent.trim();
+          console.log(name);
+          let priceText = productDiv.querySelector("p").textContent.trim();
+          let price = parseFloat(priceText.replace("Price: $", ""));
+
+          let cart = document.getElementById("cart-items");
+          let totalSpan = document.getElementById("total");
+
+          cart.innerHTML += `<p> ${name} - ${price}</p>`;
+          let total = parseFloat(totalSpan.textContent);
+          totalSpan.textContent = total + price;
+          console.log(typeof total, typeof price);
+        });
+      });
+    </script>
+  </body>
+</html>

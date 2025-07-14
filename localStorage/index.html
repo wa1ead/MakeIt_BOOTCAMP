@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="myInput" placeholder="Type something..." />
+    <button id="saveBtn">Save</button>
+
+    <p id="result"></p>
+
+    <script>
+      let input = document.getElementById("myInput");
+      let button = document.getElementById("saveBtn");
+      let result = document.getElementById("result");
+
+      button.addEventListener("click", function () {
+        localStorage.setItem("smiya", input.value);
+      });
+
+      result.textContent = localStorage.getItem("smiya");
+    </script>
+  </body>
+</html>
