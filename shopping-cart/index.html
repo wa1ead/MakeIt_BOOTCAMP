@@ -43,19 +43,33 @@
       buttons.forEach((button) => {
         button.addEventListener("click", function () {
           let productDiv = this.parentElement;
-          console.log(productDiv);
-          let name = productDiv.querySelector("h3").textContent.trim();
-          console.log(name);
-          let priceText = productDiv.querySelector("p").textContent.trim();
+          let name = productDiv.querySelector("h3").innerText;
+          // console.log(name);
+          let priceText = productDiv.querySelector("p").innerText;
+          // console.log(price);
           let price = parseFloat(priceText.replace("Price: $", ""));
+          // console.log(price);
 
-          let cart = document.getElementById("cart-items");
+          let cartItems = document.getElementById("cart-items");
+
+          cartItems.innerHTML += `<p>${name} - $${price.toFixed(2)}</p>`;
+
           let totalSpan = document.getElementById("total");
+          console.log(totalSpan.innerText);
+          let total = parseFloat(totalSpan.innerText);
+          console.log(total);
+          total += price;
+          console.log(total);
+          totalSpan.innerText = total.toFixed(2);
 
-          cart.innerHTML += `<p> ${name} - ${price}</p>`;
-          let total = parseFloat(totalSpan.textContent);
-          totalSpan.textContent = total + price;
-          console.log(typeof total, typeof price);
+          let stockage = {
+            name: name,
+            price: price,
+          };
+
+          let data = JSON.parse(localStorage.getItem("produits")) || [];
+          data.push(stockage);
+          localStorage.setItem("produits", JSON.stringify(data));
         });
       });
     </script>
