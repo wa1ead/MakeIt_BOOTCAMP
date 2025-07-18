@@ -65,10 +65,20 @@
           let stockage = {
             name: name,
             price: price,
+            quantity: 1,
           };
 
           let data = JSON.parse(localStorage.getItem("produits")) || [];
-          data.push(stockage);
+          console.log(data);
+
+          let exists = data.find((item) => item.name === name);
+          console.log(exists);
+
+          if (exists) {
+            exists.quantity += 1;
+          } else {
+            data.push(stockage);
+          }
           localStorage.setItem("produits", JSON.stringify(data));
         });
       });
